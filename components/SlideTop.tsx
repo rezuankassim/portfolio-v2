@@ -10,8 +10,8 @@ export type SlideTopProps = {
 const SlideTop: FC<SlideTopProps> = ({children}) => {
   return (
     <motion.div
-      initial={{opacity: 0, y: 60}}
-      whileInView={{opacity: 1, y: 0}}
+      initial={{opacity: 0, translateY: '30px'}}
+      whileInView={{opacity: 1, translateY: 0}}
       transition={{duration: 0.4, ease: easeInOut}}
       viewport={{once: true}}
     >

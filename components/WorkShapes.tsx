@@ -8,20 +8,20 @@ export type WorkShapesProps = {
 
 const WorkShapes: FC<WorkShapesProps> = ({target}) => {
   const {scrollYProgress} = useScroll({target: target, offset: ['start end', 'end start']});
-  const y = useTransform(scrollYProgress, [0, 1], [-1000, -700]);
-  const workCube1Y = useTransform(scrollYProgress, [0, 1], [-650, -1000]);
-  const workCube2X = useTransform(scrollYProgress, [0, 1], [700, 350]);
-  const workCube2Y = useTransform(scrollYProgress, [0, 1], [-450, -850]);
-  const workCube3X = useTransform(scrollYProgress, [0, 1], [750, 1000]);
-  const workCube3Y = useTransform(scrollYProgress, [0, 1], [-430, -800]);
-  const workCube5X = useTransform(scrollYProgress, [0, 1], [250, -100]);
-  const workCube6X = useTransform(scrollYProgress, [0, 1], [450, 800]);
-  const workCube7Y = useTransform(scrollYProgress, [0, 1], [-650, -300]);
+  const y = useTransform(scrollYProgress, [0, 1], [0, 100]);
+  const workCube1Y = useTransform(scrollYProgress, [0, 1], [-950, -1050]);
+  const workCube2X = useTransform(scrollYProgress, [0, 1], [0, -100]);
+  const workCube2Y = useTransform(scrollYProgress, [0, 1], [0, -100]);
+  const workCube3X = useTransform(scrollYProgress, [0, 1], [0, 100]);
+  const workCube3Y = useTransform(scrollYProgress, [0, 1], [0, -100]);
+  const workCube5X = useTransform(scrollYProgress, [0, 1], [0, -100]);
+  const workCube6X = useTransform(scrollYProgress, [0, 1], [0, 100]);
+  const workCube7Y = useTransform(scrollYProgress, [0, 1], [-780, -680]);
   const circleScale = useTransform(scrollYProgress, [0, 1], [1, 1.05]);
 
   return (
     <>
-      <motion.div style={{y}} className="absolute z-10">
+      <motion.div style={{y}} className="absolute left-[100px] top-[100px] z-10">
         <Image src="/work-cube.png" alt="Shape" width={200} height={200} />
       </motion.div>
 
@@ -51,19 +51,25 @@ const WorkShapes: FC<WorkShapesProps> = ({target}) => {
         <Image src="/work-cube-7.png" alt="Shape" width={550} height={550} />
       </motion.div>
 
-      <motion.div style={{x: workCube5X}} className="absolute top-[270px] z-10">
+      <motion.div style={{x: workCube5X}} className="absolute right-[220px] top-[300px] z-10">
         <Image src="/work-cube-5.png" alt="Shape" width={720} height={720} />
       </motion.div>
 
-      <motion.div style={{x: workCube6X}} className="absolute top-[275px] z-10">
+      <motion.div style={{x: workCube6X}} className="absolute right-[50px] top-[280px] z-10">
         <Image src="/work-cube-6.png" alt="Shape" width={560} height={560} />
       </motion.div>
 
-      <motion.div style={{x: workCube2X, y: workCube2Y}} className="absolute z-10">
+      <motion.div
+        style={{x: workCube2X, y: workCube2Y}}
+        className="absolute right-[350px] top-[380px] z-10"
+      >
         <Image src="/work-cube-2.png" alt="Shape" width={210} height={210} />
       </motion.div>
 
-      <motion.div style={{x: workCube3X, y: workCube3Y}} className="absolute z-10">
+      <motion.div
+        style={{x: workCube3X, y: workCube3Y}}
+        className="absolute right-[100px] top-[450px] z-10"
+      >
         <Image src="/work-cube-3.png" alt="Shape" width={205} height={205} />
       </motion.div>
     </>

@@ -8,7 +8,7 @@ import DetailCard from './DetailCard';
 
 const DetailCards: FC = () => {
   return (
-    <div className="mt-32 grid grid-cols-3 overflow-visible pb-24">
+    <div className="mx-auto mt-32 grid max-w-7xl grid-cols-3 overflow-visible px-32 pb-24">
       <DetailCard
         image="/cursor.png"
         imageAlt="User interface image"
