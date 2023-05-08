@@ -76,8 +76,16 @@ const Menu: FC = () => {
               </div>
             </div>
 
-            <div className="absolute right-0 top-0 mr-[80px] mt-[65px]">
-              <MenuButton />
+            <div className="absolute top-0 w-screen">
+              <div className="mx-auto flex max-w-7xl items-center justify-between px-32 pt-16">
+                <a href="/">
+                  <span className="text-2xl font-bold text-white">
+                    Rez <span className="text-accent-3">.</span>
+                  </span>
+                </a>
+
+                <MenuButton />
+              </div>
             </div>
           </motion.div>
         </RemoveScroll>

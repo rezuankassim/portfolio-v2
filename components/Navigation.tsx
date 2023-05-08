@@ -9,7 +9,7 @@ import LinkedIn from './icons/LinkedIn';
 
 const Navigation: FC = () => {
   return (
-    <nav className="flex items-center justify-between px-16 pt-16">
+    <nav className="flex items-center justify-between px-32 pt-16">
       <div className="flex items-center gap-x-20">
         <a href="/">
           <span className="text-2xl font-bold text-dark">
