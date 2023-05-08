@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import HeroShapes from '@/components/HeroShapes';
 import Navigation from '@/components/Navigation';
 import {Separator} from '@/components/ui/separator';
@@ -9,6 +8,13 @@ import DetailCards from '@/components/DetailCards';
 import WorkSection from '@/components/WorkSection';
 import ShowcaseSection from '@/components/ShowcaseSection';
 import Menu from '@/components/Menu';
+import {Metadata} from 'next';
+
+export const metadata: Metadata = {
+  title: 'Rez.',
+  description:
+    'Dive into the world of Rez., a talented software developer showcasing an impressive portfolio of cutting-edge projects, ingenious solutions, and remarkable programming expertise.',
+};
 
 export default function Home() {
   return (
