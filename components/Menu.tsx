@@ -77,7 +77,7 @@ const Menu: FC = () => {
             </div>
 
             <div className="absolute top-0 w-screen">
-              <div className="mx-auto flex max-w-7xl items-center justify-between px-32 pt-16">
+              <div className="mx-auto flex w-screen items-center justify-between px-32 pt-16">
                 <a href="/">
                   <span className="text-2xl font-bold text-white">
                     Rez <span className="text-accent-3">.</span>
