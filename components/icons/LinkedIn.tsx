@@ -1,6 +1,6 @@
 import {FC} from 'react';
 
-const Instagram: FC = () => {
+const LinkedIn: FC = () => {
   return (
     <svg
       width="24px"
@@ -17,14 +17,21 @@ const Instagram: FC = () => {
         strokeLinejoin="round"
       />
       <path
-        d="M11.8445 8.82617C9.91023 8.82617 8.3418 10.3946 8.3418 12.3289C8.3418 14.2631 9.91023 15.8316 11.8445 15.8316C13.7788 15.8316 15.3472 14.2631 15.3472 12.3289C15.3472 10.3946 13.7788 8.82617 11.8445 8.82617Z"
+        d="M7.77344 11.5234V15.2908"
         stroke="currentColor"
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
       <path
-        d="M16.8661 7.36569V7.43469V7.36569ZM17.1481 7.38071C17.1481 7.53771 17.0211 7.6647 16.8641 7.6647C16.7071 7.6647 16.5791 7.53771 16.5791 7.38071C16.5791 7.22371 16.7071 7.0957 16.8641 7.0957C17.0211 7.0957 17.1481 7.22371 17.1481 7.38071Z"
+        d="M11.0957 15.2904V11.8773C11.0957 10.4606 12.2438 9.3125 13.6605 9.3125C15.0781 9.3125 16.2262 10.4606 16.2262 11.8773V15.2904"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M7.77419 8.70764V8.7164M7.80968 8.70952C7.80968 8.72924 7.79368 8.74522 7.77397 8.74522C7.75425 8.74522 7.73828 8.72924 7.73828 8.70952C7.73828 8.68981 7.75425 8.67383 7.77397 8.67383C7.79368 8.67383 7.80968 8.68981 7.80968 8.70952Z"
         stroke="currentColor"
         strokeWidth="2"
         strokeLinecap="round"
@@ -34,4 +41,4 @@ const Instagram: FC = () => {
   );
 };
 
-export default Instagram;
+export default LinkedIn;

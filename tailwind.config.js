@@ -7,12 +7,14 @@ module.exports = {
       colors: {
         primary: {
           DEFAULT: '#4C40F7',
+          'blue-2': '#203696',
           'blue-3': '#1B1B87',
         },
         dark: '#00113B',
         deactive: '#9F9FA9',
         line: {
           light: '#ECECEC',
+          footer: '#D8D8D8',
         },
         accent: {
           2: '#FFD301',
